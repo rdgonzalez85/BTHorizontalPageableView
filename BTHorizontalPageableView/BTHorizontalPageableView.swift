@@ -16,7 +16,7 @@ The BTHorizontalPageableView class defines a rectangular area on the screen and 
     let btScrollView = BTHorizontalPageableView(frame: frame)
 
 */
-class BTHorizontalPageableView: UIView, YSSegmentedControlDelegate, UIScrollViewDelegate {
+public class BTHorizontalPageableView: UIView, YSSegmentedControlDelegate, UIScrollViewDelegate {
 
     //// The Segmented control, used for display the 'titles' bar.
     var segmentedControl : YSSegmentedControl? {
@@ -81,7 +81,7 @@ class BTHorizontalPageableView: UIView, YSSegmentedControlDelegate, UIScrollView
         }
     }
     
-    override var frame:CGRect {
+    public override var frame:CGRect {
         didSet {
             scrollView.frame = frame
         }
@@ -97,7 +97,7 @@ class BTHorizontalPageableView: UIView, YSSegmentedControlDelegate, UIScrollView
         self.init(frame: CGRect.zero)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.addSubview(self.scrollView)
     }
@@ -162,7 +162,7 @@ class BTHorizontalPageableView: UIView, YSSegmentedControlDelegate, UIScrollView
     }
     
     //MARK: UIScrollViewDelegate
-    internal func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+    public func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let fractionalPage = targetContentOffset.memory.x / scrollView.frame.size.width;
         let page = ceil(fractionalPage)
         
