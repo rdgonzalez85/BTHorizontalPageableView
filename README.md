@@ -2,6 +2,9 @@
 Horizontal pageable scroll view with tabs.
 It uses [YSSegmentedControl](https://github.com/yemeksepeti/YSSegmentedControl) for the tab control.
 
+## Demo
+![Alt Text](https://raw.githubusercontent.com/rdgonzalez85/BTHorizontalPageableView/master/preview.gif)
+
 ## Usage
 
 Create `BTHorizontalPageableView` with titles, views and frame.  
