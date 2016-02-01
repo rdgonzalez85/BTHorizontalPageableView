@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license               = { :type => "MIT", :file => "LICENSE" }
     s.author                = "Rodrigo Gonzalez"
     s.homepage              = "https://github.com/rdgonzalez85/BTHorizontalPageableView"
-    s.source                = { :git => "https://github.com/rdgonzalez85/BTHorizontalPageableView.git", :tag => "#{s.version}"}
+    s.source                = { :git => "https://github.com/rdgonzalez85/BTHorizontalPageableView.git", :commit => "41f0cda28130ac8c72502d22c3ce21b91c1079e2", :tag => "#{s.version}"}
     s.source_files          = "BTHorizontalPageableView/BTHorizontalPageableView/*.{swift}"
 
 end
