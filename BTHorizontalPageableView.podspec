@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
     s.author                = "Rodrigo Gonzalez"
     s.homepage              = "https://github.com/rdgonzalez85/BTHorizontalPageableView"
     s.source                = { :git => "https://github.com/rdgonzalez85/BTHorizontalPageableView.git", :tag => "#{s.version}"}
-    s.source_files          = "BTHorizontalPageableView/Classes/*.{swift}"
+    s.source_files          = "BTHorizontalPageableView/BTHorizontalPageableView/*.{swift}"
 
 end
